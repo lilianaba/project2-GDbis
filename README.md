@@ -52,7 +52,7 @@ The following animation demonstrates the application functionality:
 
 ![Main](/public/media/main.GIF)
 
-![Login](/public/media/log%20in.GIF)
+![Login](/public/media/login.GIF)
 
 ![home](/public/media/home.GIF)
 
