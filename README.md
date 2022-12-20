@@ -3,7 +3,7 @@
 
 ## Live Site
 [Live Site Heroku](https://stormy-savannah-14657.herokuapp.com/)
-[Live Site GitHub](https://stormy-savannah-14657.herokuapp.com/)
+
 
 
 
