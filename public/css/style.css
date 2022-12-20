@@ -1,0 +1,259 @@
+/* Universal Selector */
+* {
+    margin:0;
+    padding:0;  
+  }
+
+/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+:root {
+    /* declare a variable with `--` syntax */
+    --background: #332b33;
+    --light: #fff;
+    --navlink-color: #b9c6ae;
+    --font: black ;
+    --fontheader:#e8ccc1  ;
+    --lines:rgb(97, 94, 94);
+  }
+  
+  body {
+    position: relative;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    /* font-size: 20px; */
+    /* background-color: #FDF8F5; */
+    color: #4F4846;
+  }  
+.flex-column{
+  position: relative;
+}
+.flex-column a{
+  font-size: 80px;
+  text-decoration: none;
+  color:var(--fontheader);
+  z-index: 1;
+  padding-left: 45px;
+}
+.flex-column nav a{
+  font-size: 40px;
+  color: var(--fontheader);
+  z-index: 1;
+  padding-left: 40px;
+}
+
+.flex-column nav a:hover, .flex-column a:hover {
+  cursor: pointer; 
+}
+
+
+
+.display-flex{
+  height: 250px;
+  /* background-color: var(--background); */
+}
+
+header img{
+  position: absolute;
+  height: 250px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  align-content: center;
+  z-index: -1;
+
+}
+
+
+footer {
+  background-color: var(--background);
+  border-top: 5px solid var(--lines); 
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+footer p {
+  margin: 1%; 
+  font-size: 20px;
+  color: var(--fontheader); 
+  text-align: center;
+  width: 100vw;
+}
+
+.barList a{
+  font-size: 40px;
+  text-align: center;
+  color: var(--font);
+  /* display: inline; */
+  font-style: italic;
+
+}
+.barList p{
+  font-size: 40px;
+  text-align: center;
+  color: var(--font);
+  /* display: inline; */
+
+}
+section div{
+  padding:10px;
+  text-align: center;
+  /* border: solid 2px green; */
+  display: flex;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+  flex-direction: row-reverse;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '? ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+.container{
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  /* border: solid 3px orange; */
+}
+.container h3{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container p{
+  font-size: 30px;
+}
+.new-post {
+  align-content: center;
+}
+
+.login-card{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+
+.login-card label{
+  text-align: right;
+  display: inline-block;
+  width: 200px;
+}
+
+.login-card input{
+  text-align: left;
+}
+.form-group button{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+}
+.homepage h2{
+  text-align: center;
+  padding-top: 25%;
+}
+
+.new-form-page{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items:center;
+}
+
+/* responsive styles */
+@media screen and (max-width: 985px) {  
+  .image img{
+      width: 50%; 
+      align-items: center;
+      text-align: center;
+  }
+
+  .container, section div{
+   flex-direction: column; 
+}
+.login-card label{
+  text-align: left;
+}
+main .image{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .container, section div {
+    flex-direction: column; 
+}
+.image img{
+  width: 50%; 
+}
+.login-card label{
+  text-align: left;
+  
+}
+main .image{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+}
+
+@media screen and (max-width: 560px) {
+  .container, section div{
+    flex-direction: column; 
+  }
+ .image img {
+      width: 50%; 
+  }    
+  .login-card label{
+    text-align: left;
+  } 
+  main .image{
+    display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  }
+}
