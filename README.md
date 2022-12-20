@@ -44,14 +44,22 @@ Be able to create more bars and update status to close
 
 ## Repo Link:
 [Repo Link](https://github.com/lilianaba/project2-GD)
-
+[Repo copy](https://github.com/lilianaba/project2-GDbis)
 
 
 ## Mock-Up
 
 The following animation demonstrates the application functionality:
 
-![](./assets/images/Pick%20a%20Pup.gif)
+![Main](/public/media/main.GIF)
+
+![Login](/public/media/log%20in.GIF)
+
+![home](/public/media/home.GIF)
+
+![Dashboard](/public/media/bashboard.GIF)
+
+![Post](/public/media/post.GIF)
 
 
 ## Installation
