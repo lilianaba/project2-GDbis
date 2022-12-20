@@ -25,7 +25,6 @@ When I can log in or sing up
 When I can create a new account to start creating my bar post.
 When I can log in into my account.
 When after log into my account I can start creating post to different bars.
-When I can sort the bars by name or rating (ASC/DES)
 
 
 ```
@@ -63,7 +62,15 @@ The following animation demonstrates the application functionality:
 
 
 ## Installation
-
+```
+npm i 
+mysql -u root -p
+source db/schema.sql
+use tipsy_db
+quit
+npm run seed
+npm start
+```
 
 ## Credits
 [Lara Grocke](https://github.com/squrpe) 
