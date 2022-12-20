@@ -2,10 +2,10 @@
 # Tipsy - Bar tips at your fingertips
 
 ## Live Site
-[Live Site](https://)
+[Live Site Heroku](https://stormy-savannah-14657.herokuapp.com/)
+[Live Site GitHub](https://stormy-savannah-14657.herokuapp.com/)
 
 
-https://docs.google.com/document/d/1LWfMg9crtuPWdkFwY8B03fyBcv_yXzTvKVOBFygvmkM/edit
 
 ## Description
 Tipsy is an easy to use website to search reviews on local bars in Adelaide. The reviews will include a rating out of 5, a comment and either an uploaded image or default image. The review/post is able to be commented on by other users. However, to view the site you will be prompted whether you are over the age of 18 and you will need to login to view the review dashboard which displays the bar reviews and ratings.
@@ -13,7 +13,7 @@ Tipsy is an easy to use website to search reviews on local bars in Adelaide. The
 ## User Story
 
 ```
-As a young adult, I want an application that allows me to view local bar’s reviews and images, through an easy to use and responsive site.
+As a young adult, I want an application that allows me to view local barï¿½s reviews and images, through an easy to use and responsive site.
 
 ```
 
